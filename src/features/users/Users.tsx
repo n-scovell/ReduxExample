@@ -40,7 +40,7 @@ export default function Users() {
                         ))}
                     </select>
                 </label>
-                <button type="submit">GO</button>
+                <button type="submit">Add Player</button>
             </form>
             <button className="textBt" onClick={()=> dispatch(actions.toggleList())}>SHOW LIST OF USERS</button>
             </section>
