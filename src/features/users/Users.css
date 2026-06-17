@@ -1,0 +1,153 @@
+body {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.app--makeUser, .app--displayUsers {
+  width: 750px;
+  height: auto;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+}
+.app--makeUser h3, .app--displayUsers h3 {
+  text-align: center;
+}
+.app--makeUser .textBt, .app--displayUsers .textBt {
+  background: transparent;
+  border: none;
+  color: #dd6502;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+.app--makeUser form, .app--displayUsers form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.app--makeUser form label, .app--displayUsers form label {
+  font-size: 15px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.app--makeUser form label input, .app--makeUser form label select, .app--displayUsers form label input, .app--displayUsers form label select {
+  padding: 10px 0px;
+  font-size: 13px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: rgb(87, 87, 87);
+}
+.app--makeUser form label input::-moz-placeholder, .app--displayUsers form label input::-moz-placeholder {
+  color: inherit;
+}
+.app--makeUser form label input::placeholder, .app--displayUsers form label input::placeholder {
+  color: inherit;
+}
+.app--makeUser form button, .app--displayUsers form button {
+  margin: auto;
+  width: 30%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background: #dd6502;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.app--makeUser ul, .app--displayUsers ul {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  list-style-type: none;
+}
+.app--makeUser ul li, .app--displayUsers ul li {
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-indent: 10px;
+}
+.app--makeUser ul li button, .app--displayUsers ul li button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0%, -50%);
+}
+.app--makeUser ul li.red, .app--displayUsers ul li.red {
+  border: 2px solid red;
+}
+.app--makeUser ul li.blue, .app--displayUsers ul li.blue {
+  border: 2px solid blue;
+}
+.app--makeUser ul li.green, .app--displayUsers ul li.green {
+  border: 2px solid green;
+}
+.app--makeUser ul li.purple, .app--displayUsers ul li.purple {
+  border: 2px solid purple;
+}
+
+select, ::picker(select) {
+  -webkit-appearance: base-select;
+     -moz-appearance: base-select;
+          appearance: base-select;
+}
+
+select {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2937;
+  position: relative;
+  cursor: pointer;
+}
+select option {
+  font-size: 13px;
+  padding: 5px 0px 5px 3px;
+  border-radius: 6px;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+::picker(select) {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0px;
+  position: absolute;
+  font-size: 13px;
+  top: -40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+option:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+option:checked {
+  background-color: #3b82f6;
+  color: white;
+}
+
+option::checkmark {
+  display: none;
+}/*# sourceMappingURL=Users.css.map */
