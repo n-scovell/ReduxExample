@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Redux Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+A small React and TypeScript application demonstrating global state management with Redux Toolkit.
 
-## Available Scripts
+The application allows users to be added to a Redux store with a name and favorite color, displays the current list of users, and allows users to be removed from the store.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Add users to the Redux store
+* Assign each user a favorite color
+* Display users stored in Redux state
+* Remove users from the Redux store
+* Demonstrates Redux state updates and component interaction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* **React**
+* **TypeScript**
+* **Redux Toolkit**
+* **React Redux**
+* **Create React App**
 
-### `npm test`
+## Purpose
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was created as a focused example of managing shared application state with Redux Toolkit and TypeScript.
 
-### `npm run build`
+It demonstrates the basic flow of:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+Component
+    ↓
+Dispatch Action
+    ↓
+Redux Slice
+    ↓
+Updated Store
+    ↓
+Connected Components
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/n-scovell/ReduxExample.git
+cd ReduxExample
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application will be available at:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Live Demo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://redux-example-psi.vercel.app/
 
-## Learn More
+## Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+A small technical example focused on React state management with Redux Toolkit and TypeScript.
